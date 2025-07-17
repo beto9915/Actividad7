@@ -16,10 +16,21 @@ class Program:
                 cantCursos=int(input("Ingrese la cantidad de cursos: "))
                 for i in range(cantCursos):
                     curso=input("Ingrese el nombre del curso: ")
+                    notaTarea=int(input("Ingrese nota tarea: "))
+                    notaParcial=int(input("Ingrese nota parcial: "))
+                    notaProyecto=int(input("Ingrese la note del proyecto: "))
+                    estudiantes[carnet]={"nombre" : nombre, "edad": edad, "carrera": carrera, "cursos": {"codigoCurso": i+1, "curso": curso, "notaTarea":notaTarea, "notaParcial": notaParcial, "notaProyecto": notaProyecto}}
+                print("\nEstudiante registrado con exito...")
+                input()
+            elif opcion==2:
+                print("============ESTUDIANTES REGISTRADOS===========")
+                for j in len(estudiantes):
+                    print(estudiantes.items())
+                input()
+
 
 
 
 
         except :
             print("Ocurrio un error, intente de nuevo...")
-##xd
